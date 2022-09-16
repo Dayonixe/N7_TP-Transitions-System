@@ -1,0 +1,49 @@
+strict digraph DiskGraph {
+edge [colorscheme="paired12"]
+nodesep=0.35;
+subgraph cluster_graph {
+color="white";
+-3801184698450291983 [label="/\\ mouton = \"G\"\n/\\ loup = \"G\"\n/\\ chou = \"G\"\n/\\ homme = \"G\"",style = filled]
+-3801184698450291983 -> -551582358200729243 [label="",color="2",fontcolor="2"];
+-551582358200729243 [label="/\\ mouton = \"D\"\n/\\ loup = \"G\"\n/\\ chou = \"G\"\n/\\ homme = \"D\""];
+-551582358200729243 -> 8459900658438311827 [label="",color="3",fontcolor="3"];
+8459900658438311827 [label="/\\ mouton = \"D\"\n/\\ loup = \"G\"\n/\\ chou = \"G\"\n/\\ homme = \"G\""];
+-551582358200729243 -> -3801184698450291983 [label="",color="2",fontcolor="2"];
+8459900658438311827 -> -551582358200729243 [label="",color="3",fontcolor="3"];
+8459900658438311827 -> -620809789261951353 [label="",color="4",fontcolor="4"];
+-620809789261951353 [label="/\\ mouton = \"D\"\n/\\ loup = \"D\"\n/\\ chou = \"G\"\n/\\ homme = \"D\""];
+8459900658438311827 -> -8879683770295972712 [label="",color="5",fontcolor="5"];
+-8879683770295972712 [label="/\\ mouton = \"D\"\n/\\ loup = \"G\"\n/\\ chou = \"D\"\n/\\ homme = \"D\""];
+-620809789261951353 -> 8459900658438311827 [label="",color="4",fontcolor="4"];
+-620809789261951353 -> -4321933206596199149 [label="",color="2",fontcolor="2"];
+-4321933206596199149 [label="/\\ mouton = \"G\"\n/\\ loup = \"D\"\n/\\ chou = \"G\"\n/\\ homme = \"G\""];
+-8879683770295972712 -> -5214571587862290676 [label="",color="2",fontcolor="2"];
+-5214571587862290676 [label="/\\ mouton = \"G\"\n/\\ loup = \"G\"\n/\\ chou = \"D\"\n/\\ homme = \"G\""];
+-8879683770295972712 -> 8459900658438311827 [label="",color="5",fontcolor="5"];
+-4321933206596199149 -> -620809789261951353 [label="",color="2",fontcolor="2"];
+-4321933206596199149 -> 3866328041338986008 [label="",color="5",fontcolor="5"];
+3866328041338986008 [label="/\\ mouton = \"G\"\n/\\ loup = \"D\"\n/\\ chou = \"D\"\n/\\ homme = \"D\""];
+-5214571587862290676 -> 3866328041338986008 [label="",color="4",fontcolor="4"];
+-5214571587862290676 -> -8879683770295972712 [label="",color="2",fontcolor="2"];
+3866328041338986008 -> -5145348514704158482 [label="",color="3",fontcolor="3"];
+-5145348514704158482 [label="/\\ mouton = \"G\"\n/\\ loup = \"D\"\n/\\ chou = \"D\"\n/\\ homme = \"G\""];
+3866328041338986008 -> -5214571587862290676 [label="",color="4",fontcolor="4"];
+3866328041338986008 -> -4321933206596199149 [label="",color="5",fontcolor="5"];
+-5145348514704158482 -> 3866328041338986008 [label="",color="3",fontcolor="3"];
+-5145348514704158482 -> -8358939680190561414 [label="",color="2",fontcolor="2"];
+-8358939680190561414 [label="/\\ mouton = \"D\"\n/\\ loup = \"D\"\n/\\ chou = \"D\"\n/\\ homme = \"D\""];
+{rank = same; -3801184698450291983;}
+{rank = same; -551582358200729243;}
+{rank = same; 8459900658438311827;}
+{rank = same; -8879683770295972712;-620809789261951353;}
+{rank = same; -5214571587862290676;-4321933206596199149;}
+{rank = same; 3866328041338986008;}
+{rank = same; -5145348514704158482;}
+}
+subgraph cluster_legend {graph[style=bold];label = "Next State Actions" style="solid"
+node [ labeljust="l",colorscheme="paired12",style=filled,shape=record ]
+bougeHomme [label="bougeHomme",fillcolor=3]
+bougeLoup [label="bougeLoup",fillcolor=4]
+bougeChou [label="bougeChou",fillcolor=5]
+bougeMouton [label="bougeMouton",fillcolor=2]
+}}
